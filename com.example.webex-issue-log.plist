@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Template: replace /path/to/webex-issue-log with your clone's full path, then
+     cp launchd/com.example.webex-issue-log.plist ~/Library/LaunchAgents/
+     launchctl load ~/Library/LaunchAgents/com.example.webex-issue-log.plist -->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.example.webex-issue-log</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/path/to/webex-issue-log/venv/bin/python3</string>
+    <string>main.py</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/path/to/webex-issue-log</string>
+  <key>StartInterval</key>
+  <integer>900</integer>
+  <key>StandardOutPath</key>
+  <string>/path/to/webex-issue-log/launchd.log</string>
+  <key>StandardErrorPath</key>
+  <string>/path/to/webex-issue-log/launchd_error.log</string>
+</dict>
+</plist>
