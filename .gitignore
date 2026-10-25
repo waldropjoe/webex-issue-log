@@ -1,0 +1,26 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+
+# macOS
+.DS_Store
+
+tokens.json
+
+# Excel issue log
+issue_log.xlsx
+issue_log.xlsx.tmp
+
+#Webex message id
+state.json
+
+#log 
+launchd.log
+launchd_error.log
+
+#database
+issue_log.db
